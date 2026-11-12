@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============ SEO: edit these for your business ============ -->
+  <title>Manjal Taxi | Outstation, Airport &amp; One Way Taxi Across Tamil Nadu</title>
+  <meta name="description" content="Book one way, round trip, outstation and airport taxis across all 38 districts of Tamil Nadu. Hatchback, Sedan, SUV, Innova and Tempo Traveller. Get an instant fare estimate.">
+  <meta name="keywords" content="Tamil Nadu taxi, Chennai outstation cab, one way taxi Tamil Nadu, Madurai taxi, Coimbatore taxi, airport taxi Chennai, Innova taxi, Tempo Traveller hire">
+  <meta name="theme-color" content="#FFC107">
+  <!-- Replace with your live domain -->
+  <link rel="canonical" href="https://www.yourdomain.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Manjal Taxi">
+  <meta property="og:title" content="Manjal Taxi | Taxi Booking Across Tamil Nadu">
+  <meta property="og:description" content="One way, round trip, outstation and airport taxis across all 38 districts of Tamil Nadu. Instant fare estimates.">
+  <meta property="og:url" content="https://www.yourdomain.com/">
+  <!-- Upload a 1200x630 image and update this path -->
+  <meta property="og:image" content="https://www.yourdomain.com/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Inline SVG favicon (taxi roof sign) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Crect x='8' y='22' width='48' height='20' rx='5' fill='%23FFC107'/%3E%3Ctext x='32' y='37' font-family='Arial' font-weight='900' font-size='13' text-anchor='middle' fill='%23111111'%3ETAXI%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Archivo (display, variable width) + Mukta Malar (body, Latin + Tamil) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Mukta+Malar:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ============ LocalBusiness structured data: edit every value ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "additionalType": "https://schema.org/TaxiService",
+    "@id": "https://www.yourdomain.com/#business",
+    "name": "Manjal Taxi",
+    "description": "Taxi booking service for one way, round trip, outstation, airport and local trips across Tamil Nadu.",
+    "url": "https://www.yourdomain.com/",
+    "telephone": "+91-98765-43210",
+    "email": "bookings@yourdomain.com",
+    "image": "https://www.yourdomain.com/og-image.jpg",
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Your Street Address",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600001",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 13.0827, "longitude": 80.2707 },
+    "areaServed": { "@type": "State", "name": "Tamil Nadu" },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Taxi services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One Way Taxi" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Round Trip Taxi" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outstation Taxi" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Airport Transfer" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tempo Traveller Hire" } }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <svg class="preloader__wheel" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="26" fill="#111111"/>
+      <circle cx="30" cy="30" r="15" fill="#FFC107"/>
+      <g stroke="#111111" stroke-width="3">
+        <line x1="30" y1="15" x2="30" y2="45"/><line x1="15" y1="30" x2="45" y2="30"/>
+        <line x1="19.4" y1="19.4" x2="40.6" y2="40.6"/><line x1="40.6" y1="19.4" x2="19.4" y2="40.6"/>
+      </g>
+      <circle cx="30" cy="30" r="5" fill="#111111"/>
+    </svg>
+    <p class="preloader__text">Starting the engine</p>
+  </div>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Manjal Taxi home">
+        <span class="logo__sign">TAXI</span>
+        <span class="logo__name" data-config="businessName">Manjal Taxi</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__links">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About Us</a></li>
+          <li><a href="#services" class="nav__link">Our Services</a></li>
+          <li><a href="#fare" class="nav__link">Fare Calculator</a></li>
+          <li><a href="#routes" class="nav__link">Popular Routes</a></li>
+          <li><a href="#contact" class="nav__link">Contact Us</a></li>
+        </ul>
+        <a href="#book" class="btn btn--dark nav__cta">Book Now</a>
+      </div>
+    </nav>
+    <div class="checker" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__sky" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="hero__live"><span class="live-dot"></span>24/7 taxi service across Tamil Nadu</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span>Your Journey,</span></span>
+            <span class="line"><span>Our Priority</span></span>
+          </h1>
+          <p class="hero__sub">Reliable, Comfortable &amp; Affordable Taxi Services Across Tamil Nadu.</p>
+          <div class="hero__cta">
+            <a href="#book" class="btn btn--dark btn--lg btn--pulse">Book Your Ride</a>
+            <a href="#services" class="btn btn--outline btn--lg">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated scene: parallax skyline, floating pins, moving road and taxi -->
+      <div class="scene" aria-hidden="true">
+        <div class="scene__sun"></div>
+
+        <!-- Far layer: Western Ghats hills -->
+        <div class="scene__layer scene__layer--hills">
+          <svg viewBox="0 0 1600 200" preserveAspectRatio="none">
+            <path d="M0 200 L0 120 Q120 40 240 110 T480 90 Q600 30 720 100 T960 80 Q1080 20 1200 105 T1440 85 Q1520 60 1600 120 L1600 200 Z" fill="#F3D27A"/>
+          </svg>
+          <svg viewBox="0 0 1600 200" preserveAspectRatio="none">
+            <path d="M0 200 L0 120 Q120 40 240 110 T480 90 Q600 30 720 100 T960 80 Q1080 20 1200 105 T1440 85 Q1520 60 1600 120 L1600 200 Z" fill="#F3D27A"/>
+          </svg>
+        </div>
+
+        <!-- Near layer: temple gopurams, palms and town silhouettes -->
+        <div class="scene__layer scene__layer--town">
+          <svg viewBox="0 0 1600 220" preserveAspectRatio="xMidYMax slice"><use href="#townscape"/></svg>
+          <svg viewBox="0 0 1600 220" preserveAspectRatio="xMidYMax slice"><use href="#townscape"/></svg>
+        </div>
+
+        <!-- Floating location pins -->
+        <div class="pin pin--1"><svg viewBox="0 0 24 32"><use href="#pin-shape"/></svg><span>Chennai</span></div>
+        <div class="pin pin--2"><svg viewBox="0 0 24 32"><use href="#pin-shape"/></svg><span>Madurai</span></div>
+        <div class="pin pin--3"><svg viewBox="0 0 24 32"><use href="#pin-shape"/></svg><span>Ooty</span></div>
+        <div class="pin pin--4"><svg viewBox="0 0 24 32"><use href="#pin-shape"/></svg><span>Rameswaram</span></div>
+
+        <!-- Road -->
+        <div class="road">
+          <div class="road__lanes"></div>
+        </div>
+
+        <!-- Taxi -->
+        <div class="taxi">
+          <svg viewBox="0 0 320 140" class="taxi__svg">
+            <defs>
+              <pattern id="checks" width="8" height="8" patternUnits="userSpaceOnUse">
+                <rect width="8" height="8" fill="#111111"/>
+                <rect width="4" height="4" fill="#FFFFFF"/>
+                <rect x="4" y="4" width="4" height="4" fill="#FFFFFF"/>
+              </pattern>
+              <linearGradient id="bodyShade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FFD54F"/>
+                <stop offset="1" stop-color="#F2B100"/>
+              </linearGradient>
+              <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#FFF6CC" stop-opacity=".9"/>
+                <stop offset="1" stop-color="#FFF6CC" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <polygon class="taxi__beam" points="302,72 420,52 420,104" fill="url(#beam)"/>
+            <ellipse cx="160" cy="124" rx="140" ry="7" fill="#000" opacity=".25"/>
+            <!-- roof sign -->
+            <rect x="138" y="10" width="46" height="16" rx="4" fill="#111111"/>
+            <text x="161" y="22.5" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#FFC107">TAXI</text>
+            <!-- body -->
+            <path d="M20 96 L20 76 Q22 65 36 62 L82 58 L110 31 Q116 25 126 25 L198 25 Q211 25 220 33 L250 58 L291 64 Q306 67 306 81 L306 96 Q306 102 300 102 L26 102 Q20 102 20 96 Z" fill="url(#bodyShade)" stroke="#111111" stroke-width="2.5"/>
+            <!-- windows -->
+            <path d="M90 58 L115 34 Q118 31 123 31 L158 31 L158 58 Z" fill="#2B2B2B"/>
+            <path d="M166 31 L200 31 Q208 31 213 36 L238 58 L166 58 Z" fill="#2B2B2B"/>
+            <path d="M120 36 L134 36 L118 52 Z" fill="#FFFFFF" opacity=".25"/>
+            <!-- checker strip -->
+            <rect x="24" y="70" width="278" height="8" fill="url(#checks)"/>
+            <!-- door lines and handles -->
+            <line x1="162" y1="31" x2="162" y2="100" stroke="#111111" stroke-width="2"/>
+            <rect x="140" y="82" width="12" height="3" rx="1.5" fill="#111111"/>
+            <rect x="214" y="82" width="12" height="3" rx="1.5" fill="#111111"/>
+            <!-- lights -->
+            <rect x="296" y="72" width="10" height="8" rx="2" fill="#FFF6CC" stroke="#111111" stroke-width="1.5"/>
+            <rect x="20" y="66" width="7" height="10" rx="2" fill="#E53935"/>
+            <rect x="276" y="92" width="30" height="6" rx="3" fill="#333333"/>
+            <rect x="20" y="92" width="26" height="6" rx="3" fill="#333333"/>
+            <!-- wheels -->
+            <g class="wheel" style="transform-origin: 78px 102px">
+              <circle cx="78" cy="102" r="22" fill="#111111"/>
+              <circle cx="78" cy="102" r="13" fill="#9E9E9E"/>
+              <g stroke="#333333" stroke-width="3"><line x1="78" y1="89" x2="78" y2="115"/><line x1="65" y1="102" x2="91" y2="102"/><line x1="69" y1="93" x2="87" y2="111"/><line x1="87" y1="93" x2="69" y2="111"/></g>
+              <circle cx="78" cy="102" r="4" fill="#111111"/>
+            </g>
+            <g class="wheel" style="transform-origin: 248px 102px">
+              <circle cx="248" cy="102" r="22" fill="#111111"/>
+              <circle cx="248" cy="102" r="13" fill="#9E9E9E"/>
+              <g stroke="#333333" stroke-width="3"><line x1="248" y1="89" x2="248" y2="115"/><line x1="235" y1="102" x2="261" y2="102"/><line x1="239" y1="93" x2="257" y2="111"/><line x1="257" y1="93" x2="239" y2="111"/></g>
+              <circle cx="248" cy="102" r="4" fill="#111111"/>
+            </g>
+          </svg>
+          <div class="taxi__dust"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKING FORM ================= -->
+    <section class="section booking" id="book" aria-labelledby="book-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="book-title">Book your taxi</h2>
+          <p class="section__lead">Fill in your trip, check the estimated fare, and send the enquiry from your own email. We call you back to confirm the car and driver.</p>
+        </div>
+
+        <div class="booking__grid">
+          <form class="booking__form card reveal" id="booking-form" novalidate>
+            <fieldset class="fs">
+              <legend class="fs__legend">Your details</legend>
+              <div class="grid-3">
+                <div class="field">
+                  <label for="b-name">Customer name</label>
+                  <input id="b-name" name="name" type="text" autocomplete="name" placeholder="Full name" required maxlength="60">
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="b-mobile">Mobile number</label>
+                  <input id="b-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile" required maxlength="16">
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="b-email">Email address <span class="optional">(optional)</span></label>
+                  <input id="b-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="80">
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fs">
+              <legend class="fs__legend">Trip type</legend>
+              <div class="segmented" role="radiogroup" aria-label="Trip type">
+                <label class="seg"><input type="radio" name="tripType" value="oneway" checked><span>One Way</span></label>
+                <label class="seg"><input type="radio" name="tripType" value="round"><span>Round Trip</span></label>
+                <label class="seg"><input type="radio" name="tripType" value="local"><span>Local Rental</span></label>
+                <label class="seg"><input type="radio" name="tripType" value="airport"><span>Airport Transfer</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="fs">
+              <legend class="fs__legend">Route and time</legend>
+              <div class="grid-2">
+                <div class="field combo" data-combo>
+                  <label for="b-pickup">Pickup location</label>
+                  <div class="combo__field">
+                    <input id="b-pickup" name="pickup" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="b-pickup-list" autocomplete="off" placeholder="Search city, station or airport" required>
+                    <button type="button" class="combo__clear" aria-label="Clear pickup">&times;</button>
+                  </div>
+                  <ul class="combo__list" id="b-pickup-list" role="listbox" aria-label="Pickup suggestions"></ul>
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+                <div class="field combo" data-combo>
+                  <label for="b-drop">Drop location</label>
+                  <div class="combo__field">
+                    <input id="b-drop" name="drop" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="b-drop-list" autocomplete="off" placeholder="Search city, station or airport" required>
+                    <button type="button" class="combo__clear" aria-label="Clear drop">&times;</button>
+                  </div>
+                  <ul class="combo__list" id="b-drop-list" role="listbox" aria-label="Drop suggestions"></ul>
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="b-date">Pickup date</label>
+                  <input id="b-date" name="date" type="date" required>
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="b-time">Pickup time</label>
+                  <input id="b-time" name="time" type="time" required>
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+              </div>
+              <p class="hint">Can’t find your street or village? Type it in and choose “Use this location”. We confirm the exact distance when we call you.</p>
+            </fieldset>
+
+            <fieldset class="fs">
+              <legend class="fs__legend">Vehicle type</legend>
+              <div class="vehicles" id="vehicle-options" role="radiogroup" aria-label="Vehicle type">
+                <!-- Rendered by script.js from the VEHICLES config -->
+              </div>
+              <p class="field__error" id="vehicle-error" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="fs">
+              <legend class="fs__legend">Passengers and extras</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="b-passengers">Number of passengers</label>
+                  <input id="b-passengers" name="passengers" type="number" min="1" max="12" value="1" inputmode="numeric" required>
+                  <p class="field__error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="b-notes">Additional requirements <span class="optional">(optional)</span></label>
+                  <textarea id="b-notes" name="notes" rows="2" maxlength="400" placeholder="Luggage carrier, child seat, flight number, stops on the way"></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn--dark btn--lg btn--block" id="booking-submit">Book Now</button>
+            <p class="form-note">Booking opens your email app with every detail filled in. Your booking request is complete once you send that email.</p>
+          </form>
+
+          <!-- Live trip summary -->
+          <aside class="summary card card--dark reveal" aria-live="polite" aria-labelledby="summary-title">
+            <h3 class="summary__title" id="summary-title">Your trip</h3>
+            <div class="summary__route">
+              <svg viewBox="0 0 40 120" class="route-line" aria-hidden="true">
+                <circle cx="20" cy="10" r="7" fill="#FFC107"/>
+                <path d="M20 18 L20 102" stroke="#FFC107" stroke-width="3" stroke-dasharray="6 6" class="dash-move"/>
+                <circle cx="20" cy="18" r="4" fill="#FFFFFF" class="route-dot"/>
+                <path d="M20 104 l-8 -12 a10 10 0 1 1 16 0 z" fill="#FFFFFF"/>
+              </svg>
+              <div class="summary__places">
+                <div><span class="summary__label">From</span><strong id="sum-pickup">Choose pickup</strong></div>
+                <div><span class="summary__label">To</span><strong id="sum-drop">Choose drop</strong></div>
+              </div>
+            </div>
+            <dl class="summary__list">
+              <div><dt>Trip type</dt><dd id="sum-trip">One Way</dd></div>
+              <div><dt>Vehicle</dt><dd id="sum-vehicle">Sedan</dd></div>
+              <div><dt>Rate per km</dt><dd id="sum-rate">₹14</dd></div>
+              <div><dt>Estimated distance</dt><dd id="sum-distance">–</dd></div>
+            </dl>
+            <div class="summary__total">
+              <span>Estimated fare</span>
+              <strong id="sum-total">–</strong>
+            </div>
+            <p class="summary__note" id="sum-note">Approximate road-distance estimate, not live navigation distance.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="services-title">Our taxi services</h2>
+          <p class="section__lead">From a quick airport drop to a week-long temple circuit, pick the trip that fits.</p>
+        </div>
+
+        <div class="services__grid" data-stagger>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M6 24h30M28 14l10 10-10 10"/><circle cx="8" cy="24" r="3"/></svg></div>
+            <h3>One Way Taxi</h3>
+            <p>Pay only for the distance you travel. Ideal for drops to another city without a return.</p>
+            <a href="#book" class="service__link" data-trip="oneway">Book one way</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M10 18h26l-6-6M38 30H12l6 6"/></svg></div>
+            <h3>Round Trip Taxi</h3>
+            <p>Keep the same car and driver for the return journey, whether it’s a day trip or a few days away.</p>
+            <a href="#book" class="service__link" data-trip="round">Book round trip</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M4 38l12-18 8 10 6-8 14 16z"/><path d="M22 44l2-6M26 44l-2-6"/></svg></div>
+            <h3>Outstation Taxi</h3>
+            <p>Long-distance travel between districts, hill stations and pilgrim towns across Tamil Nadu.</p>
+            <a href="#book" class="service__link" data-trip="oneway">Plan outstation trip</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M6 28l36-14c3-1 4 2 2 3L30 26l-4 14-4 1 1-12-9 3-3 5-3 1 1-7z"/></svg></div>
+            <h3>Airport Transfers</h3>
+            <p>Pickups and drops at Chennai, Coimbatore, Madurai, Trichy, Salem and Thoothukudi airports.</p>
+            <a href="#book" class="service__link" data-trip="airport">Book airport transfer</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M6 42V18h12v24M18 42V8h14v34M32 42V22h10v20M4 42h40"/><path d="M22 14h6M22 20h6M22 26h6M10 24h4M10 30h4"/></svg></div>
+            <h3>Local City Taxi</h3>
+            <p>Hourly rentals for shopping, hospital visits and meetings within the city.</p>
+            <a href="#book" class="service__link" data-trip="local">Book local rental</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><rect x="6" y="16" width="36" height="24" rx="3"/><path d="M18 16v-5h12v5M6 26h36M22 26v4h4v-4"/></svg></div>
+            <h3>Corporate Taxi</h3>
+            <p>Reliable cars for staff travel, client pickups and industrial-corridor commutes.</p>
+            <a href="#contact" class="service__link">Ask for corporate rates</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><circle cx="16" cy="12" r="5"/><circle cx="32" cy="12" r="5"/><circle cx="24" cy="26" r="3.5"/><path d="M6 40c0-9 4-14 10-14s8 3 8 3 2-3 8-3 10 5 10 14"/></svg></div>
+            <h3>Family Travel</h3>
+            <p>Roomy SUVs and Innovas for weddings, temple visits and holidays with luggage.</p>
+            <a href="#book" class="service__link" data-vehicle="innova">Book a family car</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M4 34V12h28l8 10h4v12z"/><circle cx="14" cy="36" r="4"/><circle cx="34" cy="36" r="4"/><path d="M10 18h6M20 18h6"/></svg></div>
+            <h3>Tempo Traveller</h3>
+            <p>12-seater travellers for group tours, pilgrimages and office outings.</p>
+            <a href="#book" class="service__link" data-vehicle="tempo">Book a Tempo Traveller</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FARE CALCULATOR ================= -->
+    <section class="section fare" id="fare" aria-labelledby="fare-title">
+      <div class="container fare__grid">
+        <div class="fare__intro reveal">
+          <h2 class="section__title" id="fare-title">Fare calculator</h2>
+          <p class="section__lead">Check what a trip is likely to cost before you book. We estimate road distance from map coordinates, so treat the number as a guide.</p>
+          <table class="rate-table">
+            <caption>Rates per km</caption>
+            <thead><tr><th scope="col">Vehicle</th><th scope="col">Seats</th><th scope="col">Rate</th></tr></thead>
+            <tbody id="rate-table-body"><!-- Rendered by script.js --></tbody>
+          </table>
+          <p class="rate-min">Minimum fare: <strong id="min-fare-label">₹500</strong></p>
+        </div>
+
+        <div class="fare__calc card reveal">
+          <form id="calc-form" novalidate>
+            <div class="field combo" data-combo>
+              <label for="c-pickup">Pickup</label>
+              <div class="combo__field">
+                <input id="c-pickup" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="c-pickup-list" autocomplete="off" placeholder="e.g. Chennai Central" required>
+                <button type="button" class="combo__clear" aria-label="Clear pickup">&times;</button>
+              </div>
+              <ul class="combo__list" id="c-pickup-list" role="listbox" aria-label="Pickup suggestions"></ul>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="field combo" data-combo>
+              <label for="c-drop">Drop</label>
+              <div class="combo__field">
+                <input id="c-drop" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="c-drop-list" autocomplete="off" placeholder="e.g. Madurai" required>
+                <button type="button" class="combo__clear" aria-label="Clear drop">&times;</button>
+              </div>
+              <ul class="combo__list" id="c-drop-list" role="listbox" aria-label="Drop suggestions"></ul>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="c-vehicle">Vehicle</label>
+                <select id="c-vehicle"></select>
+              </div>
+              <div class="field">
+                <label for="c-trip">Trip</label>
+                <select id="c-trip">
+                  <option value="oneway">One Way</option>
+                  <option value="round">Round Trip</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--dark btn--block">Calculate fare</button>
+          </form>
+
+          <div class="calc-result" id="calc-result" hidden>
+            <dl>
+              <div><dt>Pickup</dt><dd id="r-pickup"></dd></div>
+              <div><dt>Drop</dt><dd id="r-drop"></dd></div>
+              <div><dt>Estimated distance</dt><dd id="r-distance"></dd></div>
+              <div><dt>Vehicle</dt><dd id="r-vehicle"></dd></div>
+              <div><dt>Rate per km</dt><dd id="r-rate"></dd></div>
+            </dl>
+            <div class="calc-result__total"><span>Estimated total fare</span><strong id="r-total">₹0</strong></div>
+            <button type="button" class="btn btn--primary btn--block" id="calc-book">Book this ride</button>
+          </div>
+
+          <p class="disclaimer">All displayed fares are approximate estimates. Final prices may vary based on actual road distance, waiting time, toll charges, parking charges, and travel requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POPULAR ROUTES ================= -->
+    <section class="section routes" id="routes" aria-labelledby="routes-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="routes-title">Popular Tamil Nadu taxi routes</h2>
+          <p class="section__lead">Tap a route to fill in the booking form. Distances and fares are estimates for a one way Hatchback.</p>
+        </div>
+
+        <!-- data-from / data-to are location IDs from the LOCATIONS dataset in script.js -->
+        <div class="routes__grid" data-stagger>
+          <button type="button" class="route reveal" data-from="chennai--chennai-city-centre" data-to="coimbatore--coimbatore"><span class="route__cap">Coimbatore</span><span class="route__from">from Chennai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="chennai--chennai-city-centre" data-to="madurai--madurai"><span class="route__cap">Madurai</span><span class="route__from">from Chennai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="chennai--chennai-city-centre" data-to="tiruchirappalli--tiruchirappalli"><span class="route__cap">Trichy</span><span class="route__from">from Chennai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="chennai--chennai-city-centre" data-to="salem--salem"><span class="route__cap">Salem</span><span class="route__from">from Chennai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="chennai--chennai-city-centre" data-to="tirunelveli--tirunelveli"><span class="route__cap">Tirunelveli</span><span class="route__from">from Chennai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="chennai--chennai-city-centre" data-to="puducherry--puducherry"><span class="route__cap">Pondicherry</span><span class="route__from">from Chennai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="madurai--madurai" data-to="ramanathapuram--rameswaram"><span class="route__cap">Rameswaram</span><span class="route__from">from Madurai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="madurai--madurai" data-to="kanniyakumari--kanyakumari"><span class="route__cap">Kanyakumari</span><span class="route__from">from Madurai</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="coimbatore--coimbatore" data-to="nilgiris--ooty-udhagamandalam"><span class="route__cap">Ooty</span><span class="route__from">from Coimbatore</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="tiruchirappalli--tiruchirappalli" data-to="thanjavur--thanjavur"><span class="route__cap">Thanjavur</span><span class="route__from">from Trichy</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="salem--salem" data-to="salem--yercaud"><span class="route__cap">Yercaud</span><span class="route__from">from Salem</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+          <button type="button" class="route reveal" data-from="virudhunagar--rajapalayam" data-to="chennai--chennai-city-centre"><span class="route__cap">Chennai</span><span class="route__from">from Rajapalayam</span><span class="route__km">– km</span><span class="route__fare">From –</span><svg class="route__line" viewBox="0 0 200 20"><path d="M6 10 H194"/><circle r="4" cy="10" cx="6"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="why-title">Why travel with us</h2>
+        </div>
+
+        <!-- Counters use real numbers derived from the site's own data, not invented company figures -->
+        <div class="stats reveal">
+          <div class="stat"><strong class="counter" data-stat="districts">0</strong><span>districts covered</span></div>
+          <div class="stat"><strong class="counter" data-stat="locations">0</strong><span>listed pickup and drop points</span></div>
+          <div class="stat"><strong class="counter" data-stat="vehicles">0</strong><span>vehicle types</span></div>
+          <div class="stat"><strong class="counter" data-stat="hours" data-suffix="/7">0</strong><span>booking enquiries</span></div>
+        </div>
+
+        <div class="why__grid" data-stagger>
+          <div class="why__item reveal"><svg viewBox="0 0 48 48"><path d="M14 10h22M14 18h22M14 10c10 0 14 4 14 8s-4 9-14 9l16 13"/></svg><h3>Affordable taxi fares</h3><p>Per-km pricing you can check yourself before booking.</p></div>
+          <div class="why__item reveal"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="4"/><path d="M7 22c6-2 11-2 17 0s11 2 17 0M24 28v13"/></svg><h3>Professional drivers</h3><p>Experienced drivers who know highways, ghat roads and city traffic.</p></div>
+          <div class="why__item reveal"><svg viewBox="0 0 48 48"><path d="M6 32v-8l5-10h26l5 10v8z"/><circle cx="14" cy="34" r="4"/><circle cx="34" cy="34" r="4"/><path d="M6 24h36"/></svg><h3>Comfortable vehicles</h3><p>Clean, air-conditioned cars sized for your group and luggage.</p></div>
+          <div class="why__item reveal"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 13v11l7 5"/></svg><h3>24/7 booking enquiries</h3><p>Early-morning flights and late-night trains are all part of the job.</p></div>
+          <div class="why__item reveal"><svg viewBox="0 0 48 48"><path d="M24 44s-14-13-14-24a14 14 0 0 1 28 0c0 11-14 24-14 24z"/><circle cx="24" cy="20" r="5"/></svg><h3>Tamil Nadu wide service</h3><p>District towns, temple towns, hill stations and every major airport.</p></div>
+          <div class="why__item reveal"><svg viewBox="0 0 48 48"><path d="M10 28v-4a14 14 0 0 1 28 0v4"/><rect x="6" y="26" width="8" height="12" rx="3"/><rect x="34" y="26" width="8" height="12" rx="3"/><path d="M38 38c0 4-6 5-10 5"/></svg><h3>Reliable customer support</h3><p>One phone number from booking to drop, on call and WhatsApp.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__art reveal" aria-hidden="true">
+          <svg viewBox="0 0 400 320">
+            <rect x="0" y="0" width="400" height="320" rx="28" fill="#111111"/>
+            <path d="M40 260 Q120 140 200 190 T360 80" fill="none" stroke="#FFC107" stroke-width="6" stroke-dasharray="14 12" class="dash-move"/>
+            <circle cx="40" cy="260" r="12" fill="#FFC107"/>
+            <circle cx="200" cy="190" r="9" fill="#FFFFFF"/>
+            <circle cx="360" cy="80" r="12" fill="#FFC107"/>
+            <text x="56" y="290" fill="#FFFFFF" font-family="Archivo, sans-serif" font-size="18" font-weight="700">Chennai</text>
+            <text x="214" y="214" fill="#BDBDBD" font-family="Archivo, sans-serif" font-size="15">Trichy</text>
+            <text x="268" y="62" fill="#FFFFFF" font-family="Archivo, sans-serif" font-size="18" font-weight="700">Kanyakumari</text>
+          </svg>
+        </div>
+        <div class="about__copy reveal">
+          <h2 class="section__title" id="about-title">About us</h2>
+          <p>We are a Tamil Nadu taxi service built around one simple idea: travelling between towns should be easy to plan and fair to pay for. Whether you are catching a 5 a.m. flight from Chennai, visiting family in Tirunelveli or taking parents on a temple circuit through Thanjavur and Kumbakonam, we want you to know the likely cost before you book and to trust the car that turns up.</p>
+          <p>Our fleet runs from compact hatchbacks for solo trips to 12-seater Tempo Travellers for group tours. Every booking is confirmed personally by phone, so you can talk through pickup points, stops on the way and luggage before the journey starts.</p>
+          <p>We cover all 38 districts of Tamil Nadu and nearby Puducherry, with drivers who know the highways, the ghat roads up to Ooty and Kodaikanal, and the busy city streets alike.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HIGHLIGHTS CAROUSEL ================= -->
+    <section class="section highlights" aria-labelledby="hl-title">
+      <div class="container">
+        <h2 class="section__title reveal" id="hl-title">What you can expect</h2>
+        <!-- Slides come from the HIGHLIGHTS array in script.js. Replace with genuine customer reviews once you collect them. -->
+        <div class="carousel reveal" id="highlights" aria-roledescription="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track"></div>
+          </div>
+          <div class="carousel__controls">
+            <button type="button" class="carousel__btn" data-dir="-1" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <div class="carousel__dots" role="tablist" aria-label="Choose slide"></div>
+            <button type="button" class="carousel__btn" data-dir="1" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="contact-title">Contact us</h2>
+          <p class="section__lead">Questions about a trip, corporate rates or a group tour? Reach us any way you like.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__cards" data-stagger>
+            <a class="contact-card reveal" data-link="email" href="mailto:bookings@yourdomain.com">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <span><small>Email</small><strong data-config="email">bookings@yourdomain.com</strong></span>
+            </a>
+            <a class="contact-card reveal" data-link="phone" href="tel:+919876543210">
+              <svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+              <span><small>Phone</small><strong data-config="phoneDisplay">+91 98765 43210</strong></span>
+            </a>
+            <a class="contact-card reveal" data-link="whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z"/></svg>
+              <span><small>WhatsApp</small><strong>Chat with us</strong></span>
+            </a>
+            <div class="contact-card reveal">
+              <svg viewBox="0 0 24 24"><path d="M12 22s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span><small>Service coverage</small><strong>All of Tamil Nadu</strong></span>
+            </div>
+          </div>
+
+          <form class="contact__form card reveal" id="contact-form" novalidate>
+            <div class="grid-2">
+              <div class="field">
+                <label for="ct-name">Your name</label>
+                <input id="ct-name" type="text" autocomplete="name" required maxlength="60">
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="ct-phone">Mobile number</label>
+                <input id="ct-phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16">
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="ct-msg">Message</label>
+              <textarea id="ct-msg" rows="4" required maxlength="800" placeholder="How can we help?"></textarea>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="contact__actions">
+              <button type="submit" class="btn btn--dark">Send by email</button>
+              <button type="button" class="btn btn--outline" id="contact-wa">Send on WhatsApp</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="checker" aria-hidden="true"></div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--light"><span class="logo__sign">TAXI</span><span class="logo__name" data-config="businessName">Manjal Taxi</span></a>
+        <p>One way, round trip, outstation and airport taxis across all 38 districts of Tamil Nadu.</p>
+      </div>
+      <nav aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#fare">Fare Calculator</a></li>
+          <li><a href="#routes">Popular Routes</a></li>
+          <li><a href="#book">Book Now</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Taxi services">
+        <h3>Taxi services</h3>
+        <ul>
+          <li><a href="#services">One Way Taxi</a></li>
+          <li><a href="#services">Round Trip Taxi</a></li>
+          <li><a href="#services">Airport Transfers</a></li>
+          <li><a href="#services">Tempo Traveller</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a data-link="phone" href="tel:+919876543210" data-config="phoneDisplay">+91 98765 43210</a></li>
+          <li><a data-link="email" href="mailto:bookings@yourdomain.com" data-config="email">bookings@yourdomain.com</a></li>
+          <li><a data-link="whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>Serving all of Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> <span data-config="businessName">Manjal Taxi</span>. All rights reserved.</p>
+      <p class="footer__legal">
+        <button type="button" class="link-btn" data-open-modal="privacy">Privacy Policy</button>
+        <button type="button" class="link-btn" data-open-modal="terms">Terms &amp; Conditions</button>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <a class="wa-float" data-link="whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path fill="#FFFFFF" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.4 3.4 14.8 14.8 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.5z"/></svg>
+  </a>
+  <button type="button" class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M6 14l6-6 6 6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ================= MODALS ================= -->
+  <div class="modal" id="modal-booking" role="dialog" aria-modal="true" aria-labelledby="mb-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button type="button" class="modal__close" data-close-modal aria-label="Close">&times;</button>
+      <svg class="modal__icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="14" width="52" height="38" rx="6" fill="#FFC107"/><path d="M8 18l24 18 24-18" fill="none" stroke="#111111" stroke-width="4"/></svg>
+      <h2 id="mb-title">Your booking enquiry is ready!</h2>
+      <p>Please send the email to complete your booking request.</p>
+      <p class="modal__small">Email app didn’t open? Copy the details and send them to <strong data-config="email">bookings@yourdomain.com</strong>, or send them on WhatsApp.</p>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--dark" id="mb-retry">Open email again</button>
+        <button type="button" class="btn btn--outline" id="mb-copy">Copy booking details</button>
+        <button type="button" class="btn btn--primary" id="mb-wa">Send on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="mp-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel modal__panel--text">
+      <button type="button" class="modal__close" data-close-modal aria-label="Close">&times;</button>
+      <h2 id="mp-title">Privacy Policy</h2>
+      <p>This website does not store your details on any server. When you book, the information you enter is placed into an email or WhatsApp message on your own device, and it reaches us only when you choose to send it.</p>
+      <p>We use your name, phone number, email and trip details only to respond to your enquiry, arrange your taxi and contact you about that trip. We do not sell or share your details with third parties, except with the driver assigned to your trip.</p>
+      <p>The site loads fonts from Google Fonts. To ask us to delete any message you have sent, contact us using the details on this page.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-terms" role="dialog" aria-modal="true" aria-labelledby="mt-title" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel modal__panel--text">
+      <button type="button" class="modal__close" data-close-modal aria-label="Close">&times;</button>
+      <h2 id="mt-title">Terms &amp; Conditions</h2>
+      <p>Sending a booking enquiry does not confirm a booking. A booking is confirmed only after we call or message you to confirm the vehicle, driver and fare.</p>
+      <p>Fares shown on this website are approximate estimates based on straight-line distance between locations with a road-distance allowance. The final fare is based on actual distance travelled and may include toll charges, parking charges, interstate permits, waiting time and hill-station charges where applicable.</p>
+      <p>Please share accurate pickup details and contact information. Cancellations and changes should be communicated as early as possible by phone or WhatsApp.</p>
+    </div>
+  </div>
+
+  <!-- ================= SVG SPRITES ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="pin-shape" viewBox="0 0 24 32">
+        <path d="M12 31s-10-10.5-10-18a10 10 0 0 1 20 0c0 7.5-10 18-10 18z" fill="#111111"/>
+        <circle cx="12" cy="12" r="4.5" fill="#FFC107"/>
+      </symbol>
+      <symbol id="gopuram" viewBox="0 0 80 160">
+        <polygon points="0,160 6,132 10,132 14,106 18,106 22,82 26,82 29,60 24,60 28,48 52,48 56,60 51,60 54,82 58,82 62,106 66,106 70,132 74,132 80,160"/>
+        <circle cx="34" cy="44" r="3"/><circle cx="40" cy="42" r="3"/><circle cx="46" cy="44" r="3"/>
+      </symbol>
+      <symbol id="palm" viewBox="0 0 60 120">
+        <path d="M30 120 Q26 80 32 40" stroke-width="5" fill="none" stroke="currentColor"/>
+        <path d="M32 40 Q14 30 2 44 Q18 34 32 42 Q20 18 6 16 Q24 20 33 40 Q36 14 54 10 Q40 22 34 40 Q50 28 60 40 Q46 34 33 42Z"/>
+      </symbol>
+      <symbol id="townscape" viewBox="0 0 1600 220">
+        <g fill="#2B2B2B" color="#2B2B2B">
+          <use href="#gopuram" x="80" y="50" width="70" height="170"/>
+          <use href="#palm" x="170" y="100" width="50" height="120"/>
+          <rect x="230" y="150" width="60" height="70"/><rect x="295" y="130" width="40" height="90"/>
+          <use href="#palm" x="345" y="90" width="55" height="130"/>
+          <rect x="420" y="160" width="90" height="60"/>
+          <use href="#gopuram" x="520" y="20" width="85" height="200"/>
+          <use href="#palm" x="620" y="110" width="45" height="110"/>
+          <rect x="680" y="140" width="50" height="80"/><rect x="735" y="120" width="34" height="100"/><rect x="772" y="155" width="60" height="65"/>
+          <use href="#palm" x="845" y="95" width="55" height="125"/>
+          <use href="#gopuram" x="920" y="60" width="62" height="160"/>
+          <rect x="1000" y="150" width="70" height="70"/>
+          <use href="#palm" x="1080" y="105" width="48" height="115"/>
+          <rect x="1140" y="130" width="44" height="90"/><rect x="1188" y="165" width="80" height="55"/>
+          <use href="#gopuram" x="1290" y="35" width="78" height="185"/>
+          <use href="#palm" x="1380" y="100" width="52" height="120"/>
+          <rect x="1440" y="145" width="60" height="75"/><rect x="1505" y="125" width="40" height="95"/>
+          <use href="#palm" x="1550" y="110" width="45" height="110"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
