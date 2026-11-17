@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <!-- ============ SEO: edit these for your business ============ -->
-  <title>Manjal Taxi | Outstation, Airport &amp; One Way Taxi Across Tamil Nadu</title>
-  <meta name="description" content="Book one way, round trip, outstation and airport taxis across all 38 districts of Tamil Nadu. Hatchback, Sedan, SUV, Innova and Tempo Traveller. Get an instant fare estimate.">
-  <meta name="keywords" content="Tamil Nadu taxi, Chennai outstation cab, one way taxi Tamil Nadu, Madurai taxi, Coimbatore taxi, airport taxi Chennai, Innova taxi, Tempo Traveller hire">
+  <title>Manjal Taxi | Round Trip, Outstation &amp; Airport Taxi Across Tamil Nadu</title>
+  <meta name="description" content="Book round trip, outstation and airport taxis across all 38 districts of Tamil Nadu. Hatchback, Sedan, SUV, Innova and Tempo Traveller. Get an instant fare estimate.">
+  <meta name="keywords" content="Tamil Nadu taxi, Chennai outstation cab, round trip taxi Tamil Nadu, Madurai taxi, Coimbatore taxi, airport taxi Chennai, Innova taxi, Tempo Traveller hire">
   <meta name="theme-color" content="#FFC107">
   <!-- Replace with your live domain -->
   <link rel="canonical" href="https://www.yourdomain.com/">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Manjal Taxi">
   <meta property="og:title" content="Manjal Taxi | Taxi Booking Across Tamil Nadu">
-  <meta property="og:description" content="One way, round trip, outstation and airport taxis across all 38 districts of Tamil Nadu. Instant fare estimates.">
+  <meta property="og:description" content="Round trip, outstation and airport taxis across all 38 districts of Tamil Nadu. Instant fare estimates.">
   <meta property="og:url" content="https://www.yourdomain.com/">
   <!-- Upload a 1200x630 image and update this path -->
   <meta property="og:image" content="https://www.yourdomain.com/og-image.jpg">
@@ -41,7 +41,7 @@
     "additionalType": "https://schema.org/TaxiService",
     "@id": "https://www.yourdomain.com/#business",
     "name": "Manjal Taxi",
-    "description": "Taxi booking service for one way, round trip, outstation, airport and local trips across Tamil Nadu.",
+    "description": "Taxi booking service for round trip, outstation, airport and local trips across Tamil Nadu.",
     "url": "https://www.yourdomain.com/",
     "telephone": "+91-98765-43210",
     "email": "bookings@yourdomain.com",
@@ -67,7 +67,6 @@
       "@type": "OfferCatalog",
       "name": "Taxi services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One Way Taxi" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Round Trip Taxi" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outstation Taxi" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Airport Transfer" } },
@@ -267,8 +266,7 @@
             <fieldset class="fs">
               <legend class="fs__legend">Trip type</legend>
               <div class="segmented" role="radiogroup" aria-label="Trip type">
-                <label class="seg"><input type="radio" name="tripType" value="oneway" checked><span>One Way</span></label>
-                <label class="seg"><input type="radio" name="tripType" value="round"><span>Round Trip</span></label>
+                <label class="seg"><input type="radio" name="tripType" value="round" checked><span>Round Trip</span></label>
                 <label class="seg"><input type="radio" name="tripType" value="local"><span>Local Rental</span></label>
                 <label class="seg"><input type="radio" name="tripType" value="airport"><span>Airport Transfer</span></label>
               </div>
@@ -352,7 +350,7 @@
               </div>
             </div>
             <dl class="summary__list">
-              <div><dt>Trip type</dt><dd id="sum-trip">One Way</dd></div>
+              <div><dt>Trip type</dt><dd id="sum-trip">Round Trip</dd></div>
               <div><dt>Vehicle</dt><dd id="sum-vehicle">Sedan</dd></div>
               <div><dt>Rate per km</dt><dd id="sum-rate">₹14</dd></div>
               <div><dt>Estimated distance</dt><dd id="sum-distance">–</dd></div>
@@ -377,12 +375,6 @@
 
         <div class="services__grid" data-stagger>
           <article class="service reveal">
-            <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M6 24h30M28 14l10 10-10 10"/><circle cx="8" cy="24" r="3"/></svg></div>
-            <h3>One Way Taxi</h3>
-            <p>Pay only for the distance you travel. Ideal for drops to another city without a return.</p>
-            <a href="#book" class="service__link" data-trip="oneway">Book one way</a>
-          </article>
-          <article class="service reveal">
             <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M10 18h26l-6-6M38 30H12l6 6"/></svg></div>
             <h3>Round Trip Taxi</h3>
             <p>Keep the same car and driver for the return journey, whether it’s a day trip or a few days away.</p>
@@ -392,7 +384,7 @@
             <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M4 38l12-18 8 10 6-8 14 16z"/><path d="M22 44l2-6M26 44l-2-6"/></svg></div>
             <h3>Outstation Taxi</h3>
             <p>Long-distance travel between districts, hill stations and pilgrim towns across Tamil Nadu.</p>
-            <a href="#book" class="service__link" data-trip="oneway">Plan outstation trip</a>
+            <a href="#book" class="service__link" data-trip="round">Plan outstation trip</a>
           </article>
           <article class="service reveal">
             <div class="service__icon"><svg viewBox="0 0 48 48"><path d="M6 28l36-14c3-1 4 2 2 3L30 26l-4 14-4 1 1-12-9 3-3 5-3 1 1-7z"/></svg></div>
@@ -470,8 +462,8 @@
               <div class="field">
                 <label for="c-trip">Trip</label>
                 <select id="c-trip">
-                  <option value="oneway">One Way</option>
                   <option value="round">Round Trip</option>
+                  <option value="airport">Airport Transfer</option>
                 </select>
               </div>
             </div>
@@ -500,7 +492,7 @@
       <div class="container">
         <div class="section__head reveal">
           <h2 class="section__title" id="routes-title">Popular Tamil Nadu taxi routes</h2>
-          <p class="section__lead">Tap a route to fill in the booking form. Distances and fares are estimates for a one way Hatchback.</p>
+          <p class="section__lead">Tap a route to fill in the booking form. Distances and fares are estimates for a round trip in a Hatchback.</p>
         </div>
 
         <!-- data-from / data-to are location IDs from the LOCATIONS dataset in script.js -->
@@ -651,7 +643,7 @@
     <div class="container footer__grid">
       <div class="footer__brand">
         <a href="#home" class="logo logo--light"><span class="logo__sign">TAXI</span><span class="logo__name" data-config="businessName">Manjal Taxi</span></a>
-        <p>One way, round trip, outstation and airport taxis across all 38 districts of Tamil Nadu.</p>
+        <p>Round trip, outstation and airport taxis across all 38 districts of Tamil Nadu.</p>
       </div>
       <nav aria-label="Quick links">
         <h3>Quick links</h3>
@@ -666,7 +658,6 @@
       <nav aria-label="Taxi services">
         <h3>Taxi services</h3>
         <ul>
-          <li><a href="#services">One Way Taxi</a></li>
           <li><a href="#services">Round Trip Taxi</a></li>
           <li><a href="#services">Airport Transfers</a></li>
           <li><a href="#services">Tempo Traveller</a></li>
