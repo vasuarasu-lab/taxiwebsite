@@ -57,7 +57,6 @@ const VEHICLES = [
 ];
 
 const TRIP_TYPES = {
-  oneway:  'One Way',
   round:   'Round Trip',
   local:   'Local Rental',
   airport: 'Airport Transfer'
@@ -535,7 +534,7 @@ function haversineKm(a, b) {
  * @param {object|null} from  location object (or null for custom text)
  * @param {object|null} to    location object (or null for custom text)
  * @param {string} vehicleKey
- * @param {string} tripType   oneway | round | local | airport
+ * @param {string} tripType   round | local | airport
  * @returns {{known:boolean, oneWayKm?:number, km?:number, fare?:number, rate:number, minApplied?:boolean}}
  */
 function estimateTrip(from, to, vehicleKey, tripType) {
@@ -950,7 +949,7 @@ const Booking = {
     this.updateSummary();
   },
 
-  get tripType() { return ($('input[name="tripType"]:checked', this.form) || {}).value || 'oneway'; },
+  get tripType() { return ($('input[name="tripType"]:checked', this.form) || {}).value || 'round'; },
   get vehicleKey() { return ($('input[name="vehicle"]:checked', this.form) || {}).value || 'sedan'; },
 
   setTripType(value) {
@@ -1208,7 +1207,7 @@ function initRoutes() {
     const to = LOCATION_BY_ID.get(card.dataset.to);
     if (!from || !to) { card.hidden = true; console.warn('Route location missing:', card.dataset.from, card.dataset.to); return; }
 
-    const est = estimateTrip(from, to, 'hatchback', 'oneway');
+    const est = estimateTrip(from, to, 'hatchback', 'round');
     const kmEl = $('.route__km', card);
     const fareEl = $('.route__fare', card);
     kmEl.textContent = `~${est.km} km`;
@@ -1218,7 +1217,7 @@ function initRoutes() {
     card.addEventListener('click', () => {
       Booking.pickup.setLocation(from);
       Booking.drop.setLocation(to);
-      Booking.setTripType('oneway');
+      Booking.setTripType('round');
       card.classList.remove('is-picked'); void card.offsetWidth; card.classList.add('is-picked');
       scrollToEl($('#book'));
       toast(`${from.name} to ${to.name} added. Choose your vehicle and add your details.`);
